@@ -1,0 +1,36 @@
+.form {
+  height: $xl-size;
+  position: relative;
+  width: 100%;
+
+  input {
+    border: 0px;
+    border-bottom: 1px solid $light-brown;
+    bottom: 0;
+    font-size: $m-size * 1.5;
+    line-height: $m-size;
+    outline: none;
+    position: absolute;
+    width: $module * 11;
+
+    &::placeholder {
+      color: gray;
+      font-style: italic;
+      font-size: $m-size * 1.2;
+    }
+  }
+
+  button {
+    background-color: $medium-purple;
+    border: $light-brown;
+    border-radius: 0 30% 30% 0;
+    bottom: 0;
+    cursor: pointer;
+    height: $xl-size;
+    width: $xl-size;
+    outline: none;
+    padding: 0;
+    position: absolute;
+    right: 0;
+  }
+}
