@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
+import ButtonsContainer from '../containers/ButtonsContainer';
+import Footer from './Footer';
 import Form from './Form';
 import List from './List';
 
 class ToDoApp extends Component {
   state = {
-    toDoList: [],
-    completedList: [],
     showToDo: true,
     showCompleted: true,
     displayTitles: false,
@@ -23,48 +23,19 @@ class ToDoApp extends Component {
         id: timestamp,
         name: newValue
       };
-      this.setState(prevState => ({
-        toDoList: [...prevState.toDoList, newItem],
-        // toDoList: prevState.toDoList.concat(newItem),
+      this.props.addTask(newItem);
+      this.setState({
         displayTitles: true
-      }))
+      });
     }
   }
 
   handleDeleteItem = (item) => {
-    if (this.state.toDoList.includes(item)) {
-      const newToDo =  this.state.toDoList.filter(currItem => currItem != item);
-      this.setState({
-        toDoList: [...newToDo]
-      });
-    } else {
-      const newCompletedList = this.state.completedList.filter(currItem => currItem != item);
-      this.setState({
-        completedList: [...newCompletedList]
-      });
-    }
+    this.props.deleteTask(item.id);
   }
 
   handleToggleItem = (item) => {
-    if (this.state.toDoList.includes(item)) {
-      const newToDo = this.state.toDoList.filter(currItem => currItem != item);
-      this.setState(prevState => ({
-        toDoList: [...newToDo],
-        completedList: [...prevState.completedList, item]
-      }));
-    } else {
-      const newCompletedList = this.state.completedList.filter(currItem => currItem != item);
-      this.setState(prevState => ({
-        completedList: [...newCompletedList],
-        toDoList: [...prevState.toDoList, item]
-      }));
-    }
-  }
-
-  handleClearCompleted = () => {
-    this.setState(() => ({
-      completedList: []
-    }));
+    this.props.toggleTask(item);
   }
 
   showAll = () => {
@@ -89,8 +60,8 @@ class ToDoApp extends Component {
   }
 
   render() {
-    const { toDoList, completedList, showToDo, showCompleted, displayTitles } = this.state;
-
+    const { toDoList, completedList } = this.props;
+    const { showToDo, showCompleted, displayTitles } = this.state;
     return (
       <div className="container">
         <h3>ToDo App</h3>
@@ -114,22 +85,16 @@ class ToDoApp extends Component {
             completed
           />
         }
-        {toDoList.length > 0
-          ? (toDoList.length == 1
-            ? (<p>only 1 thing left</p>)
-            : (<p>{toDoList.length} things left</p>)
-          )
-          : (<p>nothing to do :)</p>)
-        }
-        {toDoList.length != 0 || completedList != 0 ?
-        <div className="footer-buttons">
-          <button onClick={this.showAll}>All</button>
-          <button onClick={this.showOnlyToDo}>Active</button>
-          <button onClick={this.showOnlyCompleted}>Completed</button>
-          <button onClick={this.handleClearCompleted}>Clear Completed</button>
-        </div>
-        : <div></div>
-        }
+        <Footer
+          numberOfItems={toDoList.length}
+        />
+        <ButtonsContainer
+          toDoList={toDoList}
+          completedList={completedList}
+          showAll={this.showAll}
+          showOnlyToDo={this.showOnlyToDo}
+          showOnlyCompleted={this.showOnlyCompleted}
+        />
       </div>
     );
   }

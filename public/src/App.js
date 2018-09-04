@@ -1,9 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'normalize.css';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
+import ToDoAppContainer from './containers/ToDoAppContainter';
+import toDoApp from './reducers';
+
+import 'normalize.css';
 import './styles/styles.scss';
 
-import ToDoApp from './components/ToDoApp';
+const store = createStore(toDoApp);
 
-ReactDOM.render(<ToDoApp />, document.getElementById('app'));
+const App = () => (
+  <Provider store={store}>
+    <ToDoAppContainer />
+  </Provider>
+);
+
+ReactDOM.render(<App />, document.getElementById('app'));
