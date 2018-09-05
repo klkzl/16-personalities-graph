@@ -66,7 +66,7 @@ class ToDoApp extends Component {
       <div className="container">
         <h3>ToDo App</h3>
         <Form handleSubmit={this.handleSubmit} />
-        {showToDo &&
+        { showToDo &&
           <List
             title="ToDo Tasks"
             iterateList={toDoList}
@@ -75,7 +75,7 @@ class ToDoApp extends Component {
             displayTitles={displayTitles}
           />
         }
-        {showCompleted &&
+        { showCompleted &&
           <List
             title="Completed Tasks"
             iterateList={completedList}

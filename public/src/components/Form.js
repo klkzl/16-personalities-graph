@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Form = ({ handleSubmit }) => (
   <form onSubmit={handleSubmit}>
@@ -12,9 +13,15 @@ const Form = ({ handleSubmit }) => (
         minLength="3"
         // pattern="^[\p{L}\p{N} ]*$"
       />
-      <button><i className="icon-plus"></i></button>
+      <button>
+        <i className="icon-plus"></i>
+      </button>
     </div>
   </form>
 );
+
+Form.propTypes = {
+  handleSubmit: PropTypes.func.isRequired
+}
 
 export default Form;

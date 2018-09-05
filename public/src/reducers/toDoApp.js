@@ -8,7 +8,7 @@ const initialState = {
 const toDoApp = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TASK: {
-      return { ...state, toDoList: [...state.toDoList, action.task ] }
+      return { ...state, toDoList: [...state.toDoList, action.task] }
     };
     case DELETE_TASK: {
       return { ...state,

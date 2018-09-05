@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Footer = ({ numberOfItems }) => {
   if (numberOfItems === 0) {
@@ -9,4 +10,9 @@ const Footer = ({ numberOfItems }) => {
     return (<p>{numberOfItems} things left</p>)
   }
 };
- export default Footer;
+
+Footer.propTypes = {
+  numberOfItems: PropTypes.number.isRequired
+}
+
+export default Footer;
