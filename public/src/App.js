@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'normalize.css';
 
-// import './styles/styles.scss';
+import PersApp from './components/PersApp';
 
-const App = () => (
-  <div>działa</div>
-);
-
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<PersApp />, document.getElementById('app'));

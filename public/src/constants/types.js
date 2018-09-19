@@ -79,7 +79,8 @@ const types = [
     summary: 'Practical and fact-minded individuals, whose reliability cannot be doubted.',
     curiosity: 'Logisticians are the most likely personality type to say they are private individuals.',
     famous: ['Angela Merkel', 'Sting', 'George H. W. Bush', 'Anthony Hopkins']
-  },{
+  },
+  {
     name: 'Defender',
     shortcut: 'ISFJ',
     percentage: '12,5%',
