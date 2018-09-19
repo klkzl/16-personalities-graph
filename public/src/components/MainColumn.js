@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Position = styled.div`
@@ -19,14 +19,27 @@ const Position = styled.div`
   }
 `;
 
-const MainColumn =({ types}) => (
-  <div>
-    { types.map(item  => (
-      <Position key={item.shortcut}>
-        {item.name}
-      </Position>
-    ))}
-  </div>
-);
+class MainColumn extends Component {
+  hoverEfect = (item) => {
+    console.log(item);
+  }
+  render() {
+
+    const { types, hoverEfect } = this.props;
+
+    return (
+      <div>
+        { types.map(item  => (
+          <Position
+            key={item.shortcut}
+            onMouseEnter={() => this.hoverEfect(item)}
+          >
+            {item.name}
+          </Position>
+        ))}
+      </div>
+    );
+  }
+}
 
 export default MainColumn;

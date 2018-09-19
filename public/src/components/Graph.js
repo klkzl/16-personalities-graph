@@ -11,9 +11,12 @@ const Container = styled.div`
   width: ${props => props.theme.module * 8}px;
 `;
 
-const Graph = () => (
+const Graph = ({ types }) => (
   <Container>
-    some picture
+    AWSOME GRAPH
+    { types.map(item => (
+      <div key={item.name}>{item.name}: {item.percentage}</div>
+    ))}
   </Container>
 );
 

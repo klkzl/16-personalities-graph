@@ -11,12 +11,17 @@ const Container = styled.div`
 
 const Position = styled.div`
   box-sizing: border-box;
+  cursor: pointer;
   font-weight: 400;
   height: ${props => props.theme.module * 1.5}px;
   padding: ${props => props.theme.sSize}px;
   padding-left: ${props => props.theme.module * .5}px;
   text-align: left;
   width: ${props => props.theme.module * 5}px;
+
+  &:hover {
+    color: ${props => props.theme.mediumBlue};
+  }
 `;
 
 const Circle = styled.div`
