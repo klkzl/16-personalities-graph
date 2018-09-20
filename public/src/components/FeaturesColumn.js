@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  border: 1px solid ${props => props.theme.darkGrey};
+  // border: 1px solid ${props => props.theme.darkGrey};
   box-sizing: border-box;
   height: ${props => props.theme.module * 12.8}px;
   left: ${props => props.theme.module}px;
@@ -34,7 +34,7 @@ const Position = styled.div`
   }
 `;
 
-// const Circle = styled.div`
+// const Circle2 = styled.div`
 //   background-color: ${props => props.theme.lightGrey};
 //   border: 1px solid black;
 //   border-radius: ${props => props.theme.module / 6}px;
@@ -46,12 +46,18 @@ const Position = styled.div`
 // `;
 
 const Ilustration = styled.svg`
-  background-color: ${props => props.theme.lightGrey};
+  // background-color: lightgrey;
   height: ${props => props.theme.module * 12.8}px;
   position: absolute;
   right: 0;
   top: 0;
   width: ${props => props.theme.module * 5.7}px;
+`;
+
+const Circle = styled.circle`
+  fill: ${props => props.theme.lightGrey};
+  stroke: black;
+  stroke-width: 1;
 `;
 
 const FeaturesColumn = ({ features }) => (
@@ -60,10 +66,19 @@ const FeaturesColumn = ({ features }) => (
       {features.map(item => (
         <Position key={item}>
           {item}
-          {/*<Circle></Circle>*/}
+          {/*<Circle2></Circle2>*/}
         </Position>
       ))}
-      <Ilustration />
+      <Ilustration>
+        <Circle cx="7" cy="22" r="4.5" />
+        <Circle cx="7" cy="70" r="4.5" />
+        <Circle cx="7" cy="118" r="4.5" />
+        <Circle cx="7" cy="166" r="4.5" />
+        <Circle cx="7" cy="214" r="4.5" />
+        <Circle cx="7" cy="262" r="4.5" />
+        <Circle cx="7" cy="310" r="4.5" />
+        <Circle cx="7" cy="358" r="4.5" />
+      </Ilustration>
     </InsideContainer>
   </Container>
 );
