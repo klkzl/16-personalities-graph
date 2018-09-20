@@ -3,7 +3,7 @@ const types = [
     name: 'Architect',
     shortcut: 'INTJ',
     percentage: '2%',
-    features: 'Intoverted Intuitive Thinkging Judging',
+    features: 'Intoverted Intuitive Thinking Judging',
     summary: 'Imaginative and strategic thinkers, with a plan for everything.',
     curiosity: 'Architects are the most likely personality type to say it was easy for them to do well in school.',
     famous: ['Elon Musk', 'Vladimir Putin', 'Michelle Obama', 'Friedrich Nietzsche']
@@ -12,7 +12,7 @@ const types = [
     name: 'Logican',
     shortcut: 'INTP',
     percentage: '3%',
-    features: 'Intoverted Intuitive Thinkging Prospecting',
+    features: 'Intoverted Intuitive Thinking Prospecting',
     summary: 'Innovative inventors with an unquenchable thirst for knowledge.',
     curiosity: 'Logicians are the most likely personality type to consider being an astronomer.',
     famous: ['Bill Gates', 'Albert Einstein', 'Isaac Newton', 'Elen Page']
@@ -21,7 +21,7 @@ const types = [
     name: 'Commander',
     shortcut: 'ENTJ',
     percentage: '3%',
-    features: 'Extraverted Intuitive Thinkging Judging',
+    features: 'Extraverted Intuitive Thinking Judging',
     summary: 'Bold, imaginative and strong-willed leaders, always finding a way - or making one.',
     curiosity: 'Commanders are the most likely personality type to try to complete tasks long before they are due.',
     famous: ['Steve Jobs', 'Harrison Ford', 'Margaret Thatcher', 'Franklin D. Roosevelt']
@@ -30,7 +30,7 @@ const types = [
     name: 'Debater',
     shortcut: 'ENTP',
     percentage: '3%',
-    features: 'Extraverted Intuitive Thinkging Prospecting',
+    features: 'Extraverted Intuitive Thinking Prospecting',
     summary: 'Smart and curious thinkers who cannot resist an intellectual challenge.',
     curiosity: 'Debaters are the most likely personality type to want to be famous.',
     famous: ['Mark Twain', 'Celine Dion', 'Thomas Edison', 'Tom Hanks']
@@ -75,7 +75,7 @@ const types = [
     name: 'Logistician',
     shortcut: 'ISTJ',
     percentage: '13%',
-    features: 'Intoverted Observant Thinkging Judging',
+    features: 'Intoverted Observant Thinking Judging',
     summary: 'Practical and fact-minded individuals, whose reliability cannot be doubted.',
     curiosity: 'Logisticians are the most likely personality type to say they are private individuals.',
     famous: ['Angela Merkel', 'Sting', 'George H. W. Bush', 'Anthony Hopkins']
@@ -93,7 +93,7 @@ const types = [
     name: 'Executive',
     shortcut: 'ESTJ',
     percentage: '11.5%',
-    features: 'Extraverted Observant Thinkging Judging',
+    features: 'Extraverted Observant Thinking Judging',
     summary: 'Excellent administators, unsurpassed at managing things - or people.',
     curiosity: 'Executives are the most likely personality type to know what success means to them personally.',
     famous: ['John D. Rockefeller', 'Frank Sinatra', 'Sonia Sotomayor', 'James Monroe']
@@ -111,7 +111,7 @@ const types = [
     name: 'Virtuoso',
     shortcut: 'ISTP',
     percentage: '5%',
-    features: 'Intoverted Observant Thinkging Prospecting',
+    features: 'Intoverted Observant Thinking Prospecting',
     summary: 'Bold and practical experimenters, masters of all kind of tools.',
     curiosity: 'Virtuosos are the most likely personality type to avoid asking other people for help.',
     famous: ['Bear Grylls', 'Tom Cruise', 'Michael Jordan', 'Daniel Craig']
@@ -129,7 +129,7 @@ const types = [
     name: 'Entrepreneur',
     shortcut: 'ESTP',
     percentage: '4%',
-    features: 'Extaverted Observant Thinkging Prospecting',
+    features: 'Extaverted Observant Thinking Prospecting',
     summary: 'Smart, energetic and very perceptive people, who truly enjoy living on the edge.',
     curiosity: 'Entrepreneurs are the most likely personality type to know how to build and start a fire.',
     famous: ['Ernest Hemingway', 'Madonna', 'Jack Nicholson', 'Eddie Murphy']

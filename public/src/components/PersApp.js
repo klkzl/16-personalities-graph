@@ -24,8 +24,8 @@ const Container = styled.div`
   height: ${props => props.theme.module * 18}px;
   margin: ${props => props.theme.module * 2}px auto 0;
   position: relative;
-  width: ${props => props.theme.module * 27}px;
   text-align: center;
+  width: ${props => props.theme.module * 27}px;
 `;
 
 const Position = styled.div`
@@ -61,6 +61,8 @@ class PersApp extends Component {
   }
 
   render() {
+    const { shortcut, summary, curiosity } = this.state;
+
     return (
       <ThemeProvider theme={theme}>
         <Container>
@@ -68,9 +70,12 @@ class PersApp extends Component {
             title={TITLE}
             subtitle={SUBTITLE}
           />
-          <TypeTitle title={this.state.shortcut} />
+          <TypeTitle
+            title={shortcut}
+          />
           <FeaturesColumn
             features={features}
+            activePers={this.state.name.toLowerCase()}
           />
           { types.map(item  => (
             <Position
@@ -81,7 +86,7 @@ class PersApp extends Component {
             </Position>
           ))}
           <Graph types={types} />
-          <Description summary={this.state.summary} curiosity={this.state.curiosity} />
+          <Description summary={summary} curiosity={curiosity} />
         </Container>
       </ThemeProvider>
     );
