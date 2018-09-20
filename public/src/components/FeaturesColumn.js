@@ -66,8 +66,14 @@ const Circle = styled.circle`
 
 const Path = styled.path`
   fill: transparent;
+  opacity: .75;
   stroke: ${props => props.theme.darkGrey};
-  opacity: .8;
+`;
+
+const OpposedPath = styled.path`
+  fill: transparent;
+  opacity: .75;
+  stroke: black;
 `;
 
 const FeaturesColumn = ({ features }) => (
@@ -80,14 +86,6 @@ const FeaturesColumn = ({ features }) => (
         </Position>
       ))}
       <Ilustration>
-        <Circle cx="7" cy="22" r="4.5" />
-        <Circle cx="7" cy="70" r="4.5" />
-        <Circle cx="7" cy="118" r="4.5" />
-        <Circle cx="7" cy="166" r="4.5" />
-        <Circle cx="7" cy="214" r="4.5" />
-        <Circle cx="7" cy="262" r="4.5" />
-        <Circle cx="7" cy="310" r="4.5" />
-        <Circle cx="7" cy="358" r="4.5" />
         {/*architect*/}
         <Path d="M7 22 C 55 45, 145 75, 172 8" />
         <Path d="M7 118 C 65 125, 135 135, 172 8" />
@@ -168,6 +166,20 @@ const FeaturesColumn = ({ features }) => (
         <Path d="M7 166 C 65 335, 135 385, 172 366" />
         <Path d="M7 262 C 65 375, 135 385, 172 366" />
         <Path d="M7 358 C 65 375, 135 395, 172 366" />
+        {/*opposed features strokes*/}
+        <OpposedPath d="M7 22 C 15 38, 15 54, 7 70" />
+        <OpposedPath d="M7 118 C 15 134, 15 150, 7 166" />
+        <OpposedPath d="M7 214 C 15 230, 15 246, 7 262" />
+        <OpposedPath d="M7 310 C 15 326, 15 342, 7 358" />
+        {/*dots*/}
+        <Circle cx="7" cy="22" r="4.5" />
+        <Circle cx="7" cy="70" r="4.5" />
+        <Circle cx="7" cy="118" r="4.5" />
+        <Circle cx="7" cy="166" r="4.5" />
+        <Circle cx="7" cy="214" r="4.5" />
+        <Circle cx="7" cy="262" r="4.5" />
+        <Circle cx="7" cy="310" r="4.5" />
+        <Circle cx="7" cy="358" r="4.5" />
       </Ilustration>
     </InsideContainer>
   </Container>
