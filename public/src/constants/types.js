@@ -38,7 +38,7 @@ const types = [
   {
     name: 'Advocate',
     shortcut: 'INFJ',
-    percentage: '1,5%',
+    percentage: '1.5%',
     features: 'Intoverted Intuitive Feeling Judging',
     summary: 'Quiet and mystical, yet very inspiring and tireless idealists.',
     curiosity: 'Advocates are the most likely personality type to describe themselves as “people watchers”.',
@@ -47,7 +47,7 @@ const types = [
   {
     name: 'Mediator',
     shortcut: 'INFP',
-    percentage: '4,5%',
+    percentage: '4.5%',
     features: 'Intoverted Intuitive Feeling Prospecting',
     summary: 'Poetic, kind and altruistic people, always eager to help a good cause.',
     curiosity: 'Mediators are the least likely personality type to say they perform better under stress.',
@@ -56,7 +56,7 @@ const types = [
   {
     name: 'Protagonist',
     shortcut: 'ENFJ',
-    percentage: '2,5%',
+    percentage: '2.5%',
     features: 'Extraverted Intuitive Feeling Judging',
     summary: 'Charismatic and inspiring leaders, able to mesmerize their listeners.',
     curiosity: 'Protagonists are the most likely personality type to defend someone who is being bullied.',
@@ -67,7 +67,7 @@ const types = [
     shortcut: 'ENFP',
     percentage: '7%',
     features: 'Extraverted Intuitive Feeling Prospecting',
-    summary: 'Enthusiastic, creative and sociable free spirits, who can always find a reason to smile.',
+    summary: 'Creative and sociable free spirits, who can always find a reason to smile.',
     curiosity: 'Campaigners are the most likely personality type to say that success is primarily determined by belief in yourself.',
     famous: ['Quentin Tarantino', 'Robert Downey, Jr.', 'Drew Barrymore', 'Robin Williams']
   },
@@ -83,7 +83,7 @@ const types = [
   {
     name: 'Defender',
     shortcut: 'ISFJ',
-    percentage: '12,5%',
+    percentage: '12.5%',
     features: 'Intoverted Observant Feeling Judging',
     summary: 'Very dedicated and warm protectors, always ready to defend their loved ones.',
     curiosity: 'Defenders are the least likely personality type to enjoy gambling.',
@@ -92,7 +92,7 @@ const types = [
   {
     name: 'Executive',
     shortcut: 'ESTJ',
-    percentage: '11,5%',
+    percentage: '11.5%',
     features: 'Extraverted Observant Thinkging Judging',
     summary: 'Excellent administators, unsurpassed at managing things - or people.',
     curiosity: 'Executives are the most likely personality type to know what success means to them personally.',
@@ -137,7 +137,7 @@ const types = [
   {
     name: 'Entertainer',
     shortcut: 'ESFP',
-    percentage: '7,5%',
+    percentage: '7.5%',
     features: 'Extaverted Observant Feeling Prospecting',
     summary: 'Spontaneous, energetic and enthusiastic people - life is never boring around them.',
     curiosity: 'Entertainers are the most likely personality type to say they are good at cheering people up.',

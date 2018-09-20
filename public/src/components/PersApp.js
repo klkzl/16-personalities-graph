@@ -45,7 +45,6 @@ const Position = styled.div`
     cursor: pointer;
   }
 `;
-
 class PersApp extends Component {
   state = {
     name: '',
@@ -59,7 +58,6 @@ class PersApp extends Component {
 
   hoverEfect = (item) => {
     this.setState(() => item);
-    console.log(this.state);
   }
 
   render() {
