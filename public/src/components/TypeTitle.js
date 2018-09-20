@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Name = styled.div`
-  border: 1px solid ${props => props.theme.darkGrey};
+  // border: 1px solid ${props => props.theme.darkGrey};
   box-sizing: border-box;
   font-size: ${props => props.theme.sSize * 1.5}px;
   height: ${props => props.theme.module * 1.5}px;
@@ -15,7 +15,11 @@ const Name = styled.div`
 `;
 
 const TypeTitle = ({ title }) => (
-  <Name>{title}</Name>
+  <div>
+    {title &&
+      <Name>{title}</Name>
+    }
+  </div>
 );
 
 export default TypeTitle;

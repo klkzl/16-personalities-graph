@@ -38,13 +38,9 @@ const Ilustration = styled.svg`
 `;
 
 const Circle = styled.circle`
-  fill: ${props => props.theme.lightGrey};
+  fill: ${props => (props.className.includes(props.activePers)) ? props.theme.mediumBlue: props.theme.lightGrey};
   stroke: black;
   stroke-width: 1;
-
-  &:hover {
-    fill ${props => props.theme.mediumBlue};
-  }
 `;
 
 const Path = styled.path`
@@ -110,59 +106,59 @@ const FeaturesColumn = ({ features, activePers }) => (
         <Path activePers={activePers} className="campaigner" d="M7 262 C 65 285, 135 295, 170 176" />
         <Path activePers={activePers} className="campaigner" d="M7 358 C 85 345, 135 345, 170 176" />
         {/*logistician*/}
-        <Path activePers={activePers} className="logistician" d="M7 22 C 55 105, 145 225, 170 200" />
-        <Path activePers={activePers} className="logistician" d="M7 166 C 65 195, 135 245, 170 200" />
-        <Path activePers={activePers} className="logistician" d="M7 214 C 65 245, 135 275, 170 200" />
-        <Path activePers={activePers} className="logistician" d="M7 310 C 65 315, 135 345, 170 200" />
+        <Path activePers={activePers} className="logistician" d="M7 22 C 55 105, 145 225, 170 202" />
+        <Path activePers={activePers} className="logistician" d="M7 166 C 65 195, 135 245, 170 202" />
+        <Path activePers={activePers} className="logistician" d="M7 214 C 65 245, 135 275, 170 202" />
+        <Path activePers={activePers} className="logistician" d="M7 310 C 65 315, 135 345, 170 202" />
         {/*defender*/}
-        <Path activePers={activePers} className="defender" d="M7 22 C 55 125, 145 255, 170 224" />
-        <Path activePers={activePers} className="defender" d="M7 166 C 65 215, 135 275, 170 224" />
-        <Path activePers={activePers} className="defender" d="M7 262 C 65 275, 135 295, 170 224" />
-        <Path activePers={activePers} className="defender" d="M7 310 C 65 315, 135 345, 170 224" />
+        <Path activePers={activePers} className="defender" d="M7 22 C 55 125, 145 255, 170 226" />
+        <Path activePers={activePers} className="defender" d="M7 166 C 65 215, 135 275, 170 226" />
+        <Path activePers={activePers} className="defender" d="M7 262 C 65 275, 135 295, 170 226" />
+        <Path activePers={activePers} className="defender" d="M7 310 C 65 315, 135 345, 170 226" />
         {/*executive*/}
-        <Path activePers={activePers} className="executive" d="M7 70 C 55 195, 145 275, 170 248" />
-        <Path activePers={activePers} className="executive" d="M7 166 C 65 235, 135 295, 170 248" />
-        <Path activePers={activePers} className="executive" d="M7 214 C 65 275, 135 315, 170 248" />
-        <Path activePers={activePers} className="executive" d="M7 310 C 65 325, 135 375, 170 248" />
+        <Path activePers={activePers} className="executive" d="M7 70 C 55 195, 145 275, 170 250" />
+        <Path activePers={activePers} className="executive" d="M7 166 C 65 235, 135 295, 170 250" />
+        <Path activePers={activePers} className="executive" d="M7 214 C 65 275, 135 315, 170 250" />
+        <Path activePers={activePers} className="executive" d="M7 310 C 65 325, 135 375, 170 250" />
         {/*consul*/}
-        <Path activePers={activePers} className="consul" d="M7 70 C 55 215, 145 295, 170 272" />
-        <Path activePers={activePers} className="consul" d="M7 166 C 65 275, 135 315, 170 272" />
-        <Path activePers={activePers} className="consul" d="M7 262 C 65 315, 135 345, 170 272" />
-        <Path activePers={activePers} className="consul" d="M7 310 C 65 345, 135 385, 170 272" />
+        <Path activePers={activePers} className="consul" d="M7 70 C 55 215, 145 295, 170 274" />
+        <Path activePers={activePers} className="consul" d="M7 166 C 65 275, 135 315, 170 274" />
+        <Path activePers={activePers} className="consul" d="M7 262 C 65 315, 135 345, 170 274" />
+        <Path activePers={activePers} className="consul" d="M7 310 C 65 345, 135 385, 170 274" />
         {/*virtuoso*/}
-        <Path activePers={activePers} className="virtuoso" d="M7 22 C 55 175, 145 315, 170 296" />
-        <Path activePers={activePers} className="virtuoso" d="M7 166 C 65 295, 135 345, 170 296" />
-        <Path activePers={activePers} className="virtuoso" d="M7 216 C 65 295, 135 375, 170 296" />
-        <Path activePers={activePers} className="virtuoso" d="M7 358 C 65 365, 135 395, 170 296" />
+        <Path activePers={activePers} className="virtuoso" d="M7 22 C 55 175, 145 315, 170 298" />
+        <Path activePers={activePers} className="virtuoso" d="M7 166 C 65 295, 135 345, 170 298" />
+        <Path activePers={activePers} className="virtuoso" d="M7 216 C 65 295, 135 375, 170 298" />
+        <Path activePers={activePers} className="virtuoso" d="M7 358 C 65 365, 135 395, 170 298" />
         {/*adventurer*/}
-        <Path activePers={activePers} className="adventurer" d="M7 22 C 55 195, 145 345, 170 320" />
-        <Path activePers={activePers} className="adventurer" d="M7 166 C 65 295, 135 365, 170 320" />
-        <Path activePers={activePers} className="adventurer" d="M7 262 C 65 345, 135 375, 170 320" />
-        <Path activePers={activePers} className="adventurer" d="M7 358 C 65 375, 135 405, 170 320" />
+        <Path activePers={activePers} className="adventurer" d="M7 22 C 55 195, 145 345, 170 324" />
+        <Path activePers={activePers} className="adventurer" d="M7 166 C 65 295, 135 365, 170 324" />
+        <Path activePers={activePers} className="adventurer" d="M7 262 C 65 345, 135 375, 170 324" />
+        <Path activePers={activePers} className="adventurer" d="M7 358 C 65 375, 135 405, 170 324" />
         {/*entrepreneur*/}
-        <Path activePers={activePers} className="entrepreneur" d="M7 70 C 55 215, 145 365, 170 342" />
-        <Path activePers={activePers} className="entrepreneur" d="M7 166 C 65 315, 135 375, 170 342" />
-        <Path activePers={activePers} className="entrepreneur" d="M7 216 C 65 325, 135 385, 170 342" />
-        <Path activePers={activePers} className="entrepreneur" d="M7 358 C 65 375, 135 395, 170 342" />
+        <Path activePers={activePers} className="entrepreneur" d="M7 70 C 55 215, 145 365, 170 346" />
+        <Path activePers={activePers} className="entrepreneur" d="M7 166 C 65 315, 135 375, 170 346" />
+        <Path activePers={activePers} className="entrepreneur" d="M7 216 C 65 325, 135 385, 170 346" />
+        <Path activePers={activePers} className="entrepreneur" d="M7 358 C 65 375, 135 395, 170 346" />
         {/*entertainer*/}
-        <Path activePers={activePers} className="entertainer" d="M7 70 C 55 295, 145 385, 170 366" />
-        <Path activePers={activePers} className="entertainer" d="M7 166 C 65 335, 135 385, 170 366" />
-        <Path activePers={activePers} className="entertainer" d="M7 262 C 65 375, 135 385, 170 366" />
-        <Path activePers={activePers} className="entertainer" d="M7 358 C 65 375, 135 395, 170 366" />
+        <Path activePers={activePers} className="entertainer" d="M7 70 C 55 295, 145 385, 170 370" />
+        <Path activePers={activePers} className="entertainer" d="M7 166 C 65 335, 135 385, 170 370" />
+        <Path activePers={activePers} className="entertainer" d="M7 262 C 65 375, 135 385, 170 370" />
+        <Path activePers={activePers} className="entertainer" d="M7 358 C 65 375, 135 395, 170 370" />
         {/*opposed features strokes*/}
         <OpposedPath d="M7 22 C 15 38, 15 54, 7 70" />
         <OpposedPath d="M7 118 C 15 134, 15 150, 7 166" />
         <OpposedPath d="M7 214 C 15 230, 15 246, 7 262" />
         <OpposedPath d="M7 310 C 15 326, 15 342, 7 358" />
         {/*dots*/}
-        <Circle cx="7" cy="22" r="4.5" />
-        <Circle cx="7" cy="70" r="4.5" />
-        <Circle cx="7" cy="118" r="4.5" />
-        <Circle cx="7" cy="166" r="4.5" />
-        <Circle cx="7" cy="214" r="4.5" />
-        <Circle cx="7" cy="262" r="4.5" />
-        <Circle cx="7" cy="310" r="4.5" />
-        <Circle cx="7" cy="358" r="4.5" />
+        <Circle activePers={activePers} className="architect logican advocate mediator logistician defender virtuoso adventurer" cx="7" cy="22" r="4.5" />
+        <Circle activePers={activePers} className="commander debater protagonist campaigner executive consul entrepreneur entertainer" cx="7" cy="70" r="4.5" />
+        <Circle activePers={activePers} className="architect logican commander debater advocate mediator protagonist campaigner" cx="7" cy="118" r="4.5" />
+        <Circle activePers={activePers} className="logistician defender executive consul virtuoso adventurer entrepreneur entertainer" cx="7" cy="166" r="4.5" />
+        <Circle activePers={activePers} className="architect logican commander debater logistician executive virtuoso entrepreneur" cx="7" cy="214" r="4.5" />
+        <Circle activePers={activePers} className="advocate mediator protagonist campaigner defender consul adventurer entertainer" cx="7" cy="262" r="4.5" />
+        <Circle activePers={activePers} className="architect commander advocate protagonist logistician defender executive consul" cx="7" cy="310" r="4.5" />
+        <Circle activePers={activePers} className="logican debater mediator campaigner virtuoso adventurer entrepreneur entertainer" cx="7" cy="358" r="4.5" />
       </Ilustration>
     </InsideContainer>
   </Container>
