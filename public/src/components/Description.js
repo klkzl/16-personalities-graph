@@ -38,9 +38,13 @@ const Paragraph = styled.p`
 
 const Description = ({ summary, curiosity }) => (
   <Container>
-    { summary && <Title>Description:</Title> }
+    { summary &&
+      <Title>Description:</Title>
+    }
     <Paragraph>{summary}</Paragraph>
-    { curiosity && <Title>Curiosity:</Title> }
+    { curiosity
+      && <Title>Curiosity:</Title>
+    }
     <Paragraph>{curiosity}</Paragraph>
   </Container>
 );

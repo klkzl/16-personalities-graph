@@ -5,12 +5,10 @@ import Description from './Description';
 import FeaturesColumn from './FeaturesColumn';
 import Graph from './Graph';
 import Header from './Header';
-// import MainColumn from './MainColumn';
 import TypeTitle from './TypeTitle';
 
 import types from '../constants/types';
 import { TITLE, SUBTITLE } from '../constants/';
-import features from '../constants/features';
 
 import theme from '../styles/base/Theme';
 import { ThemeProvider } from 'styled-components';
@@ -74,7 +72,6 @@ class PersApp extends Component {
             title={shortcut}
           />
           <FeaturesColumn
-            features={features}
             activePers={this.state.name.toLowerCase()}
           />
           { types.map(item  => (
@@ -86,7 +83,10 @@ class PersApp extends Component {
             </Position>
           ))}
           <Graph types={types} />
-          <Description summary={summary} curiosity={curiosity} />
+          <Description
+            summary={summary}
+            curiosity={curiosity}
+          />
         </Container>
       </ThemeProvider>
     );

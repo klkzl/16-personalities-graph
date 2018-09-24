@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
+
+import features from '../constants/features';
 
 const Container = styled.div`
   box-sizing: border-box;
@@ -17,16 +19,13 @@ const InsideContainer = styled.div`
 const Position = styled.div`
   box-sizing: border-box;
   cursor: pointer;
+  color: ${props => (props.className.includes(props.activePers)) ? props.theme.mediumBlue : 'black'};
   font-weight: 400;
   height: ${props => props.theme.module * 1.6}px;
   padding: ${props => props.theme.module * .5}px;
   padding-right: ${props => props.theme.module * 2}px;
   text-align: right;
   width: ${props => props.theme.module * 5}px;
-
-  &:hover {
-    color: ${props => props.theme.mediumBlue};
-  }
 `;
 
 const Ilustration = styled.svg`
@@ -56,16 +55,65 @@ const OpposedPath = styled.path`
   stroke: black;
 `;
 
-const FeaturesColumn = ({ features, activePers }) => (
+// const types = {
+//   ARCHITECT: {
+//     className: "architect",
+//     paths: [
+//       "M7 22 C 55 45, 145 75, 170 8",
+//       "M7 118 C 65 125, 135 135, 170 8"
+//     ]
+//   },
+//   LOGICAN: {
+
+//   }
+// }
+
+// const architectPaths = [
+//   "M7 22 C 55 45, 145 75, 170 8",
+//   "M7 118 C 65 125, 135 135, 170 8"
+// ]
+
+// const RoleGenerator = ({className, paths}) => ({activePers}) => (
+//   <Fragment>
+//     {paths.map(path => (
+//       <Path activePers={activePers} className={className} d={path} />
+//     ))}
+//   </Fragment>
+// )
+
+// const Architect3 = RoleGenerator(types.ARCHITECT);
+// const Logician2 = RoleGenerator("logican", logicanPaths);
+
+// const Architect2 = ({activePers}) => (
+//   <Fragment>
+//     {architectPaths.map(path => (
+//       <Path activePers={activePers} className="architect"  d={path} />
+//     ))}
+//   </Fragment>
+// )
+
+// const CircleContainer = () => {
+  
+//   return (
+//     <Circle isActive={}
+//   )
+// }
+
+const FeaturesColumn = ({ activePers }) => (
   <Container>
     <InsideContainer>
       {features.map(item => (
-        <Position key={item}>
-          {item}
+        <Position
+          className={item.featureLinks}
+          key={item.name}
+          activePers={activePers}
+        >
+          {item.name}
         </Position>
       ))}
-      <Ilustration activePers={activePers}>
-        {/*architect*/}
+      <Ilustration>
+        {/*<Architect activePers={activePers}/>*/}
+        {/*logican*/}
         <Path activePers={activePers} className="architect"  d="M7 22 C 55 45, 145 75, 170 8" />
         <Path activePers={activePers} className="architect" d="M7 118 C 65 125, 135 135, 170 8" />
         <Path activePers={activePers} className="architect" d="M7 214 C 65 205, 135 195, 170 8" />
@@ -145,20 +193,22 @@ const FeaturesColumn = ({ features, activePers }) => (
         <Path activePers={activePers} className="entertainer" d="M7 166 C 65 335, 135 385, 170 370" />
         <Path activePers={activePers} className="entertainer" d="M7 262 C 65 375, 135 385, 170 370" />
         <Path activePers={activePers} className="entertainer" d="M7 358 C 65 375, 135 395, 170 370" />
+
         {/*opposed features strokes*/}
         <OpposedPath d="M7 22 C 15 38, 15 54, 7 70" />
         <OpposedPath d="M7 118 C 15 134, 15 150, 7 166" />
         <OpposedPath d="M7 214 C 15 230, 15 246, 7 262" />
         <OpposedPath d="M7 310 C 15 326, 15 342, 7 358" />
+
         {/*dots*/}
-        <Circle activePers={activePers} className="architect logican advocate mediator logistician defender virtuoso adventurer" cx="7" cy="22" r="4.5" />
-        <Circle activePers={activePers} className="commander debater protagonist campaigner executive consul entrepreneur entertainer" cx="7" cy="70" r="4.5" />
-        <Circle activePers={activePers} className="architect logican commander debater advocate mediator protagonist campaigner" cx="7" cy="118" r="4.5" />
-        <Circle activePers={activePers} className="logistician defender executive consul virtuoso adventurer entrepreneur entertainer" cx="7" cy="166" r="4.5" />
-        <Circle activePers={activePers} className="architect logican commander debater logistician executive virtuoso entrepreneur" cx="7" cy="214" r="4.5" />
-        <Circle activePers={activePers} className="advocate mediator protagonist campaigner defender consul adventurer entertainer" cx="7" cy="262" r="4.5" />
-        <Circle activePers={activePers} className="architect commander advocate protagonist logistician defender executive consul" cx="7" cy="310" r="4.5" />
-        <Circle activePers={activePers} className="logican debater mediator campaigner virtuoso adventurer entrepreneur entertainer" cx="7" cy="358" r="4.5" />
+        <Circle activePers={activePers} className={features[0].featureLinks} cx="7" cy="22" r="4.5" />
+        <Circle activePers={activePers} className={features[1].featureLinks} cx="7" cy="70" r="4.5" />
+        <Circle activePers={activePers} className={features[2].featureLinks} cx="7" cy="118" r="4.5" />
+        <Circle activePers={activePers} className={features[3].featureLinks} cx="7" cy="166" r="4.5" />
+        <Circle activePers={activePers} className={features[4].featureLinks} cx="7" cy="214" r="4.5" />
+        <Circle activePers={activePers} className={features[5].featureLinks} cx="7" cy="262" r="4.5" />
+        <Circle activePers={activePers} className={features[6].featureLinks} cx="7" cy="310" r="4.5" />
+        <Circle activePers={activePers} className={features[7].featureLinks} cx="7" cy="358" r="4.5" />
       </Ilustration>
     </InsideContainer>
   </Container>
