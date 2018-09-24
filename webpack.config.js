@@ -13,11 +13,10 @@ module.exports ={
             test: /\.js$/,
             exclude: /node_modules/
         },{
-            test: /\.s?css$/,
+            test: /\.css$/,
             use: [
                 'style-loader',
                 'css-loader',
-                'sass-loader'
             ]
         }]
     }
