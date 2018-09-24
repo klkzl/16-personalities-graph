@@ -19,12 +19,10 @@
     "css-loader": "^1.0.0",
     "d3": "^5.7.0",
     "live-server": "^1.2.0",
-    "node-sass": "^4.9.3",
     "normalize.css": "^8.0.0",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "styled-components": "^3.4.9",
     "webpack": "^3.1.0"
