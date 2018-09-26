@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   box-sizing: border-box;
-  border: 1px solid ${props => props.theme.darkGrey};
+  // border: 1px solid ${props => props.theme.darkGrey};
   height: ${props => props.theme.module * 8.5}px;
   position: absolute;
   right: ${props => props.theme.module}px;
-  top: ${props => props.theme.module * 1.2}px;
+  top: ${props => props.theme.module * 2.3}px;
   width: ${props => props.theme.module * 8}px;
 `;
 
@@ -19,10 +19,20 @@ const Ilustration = styled.svg`
 const Circle = styled.circle`
   fill: ${props => (props.isActive) ? props.theme.mediumBlue : props.theme.darkGrey };
   opacity: ${props => (props.isActive) ? 1 : .4};
-  // transform: ${props => (props.isActive) ? 'scale(1.2)' : 'scale(1)'};
-  // transform-origin: top right;
-  // transition: transform .5s;
-  position: relative;
+  transform: ${props => (props.isActive) ? 'scale(1.01)' : 'scale(1)'};
+  transition: transform .5s;
+`;
+
+const Title = styled.h5`
+  color: ${props => props.theme.mediumBlue};
+  font-family: ${props => props.theme.mainFont};
+  font-size: ${props => props.theme.sSize}px;
+  font-weight: 400;
+  left: 6px;
+  letter-spacing: 1px;
+  margin: 0;
+  position: absolute;
+  text-align: left;
 `;
 
 // const CircleWrapper = props => {
@@ -32,4 +42,4 @@ const Circle = styled.circle`
 //   )
 // }
 
-export { Container, Ilustration, Circle };
+export { Container, Ilustration, Circle, Title };
