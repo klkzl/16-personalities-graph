@@ -2,7 +2,7 @@ const types = [
   {
     name: 'Architect',
     shortcut: 'INTJ',
-    percentage: '2%',
+    percentage: 2,
     features: 'Intoverted Intuitive Thinking Judging',
     summary: 'Imaginative and strategic thinkers, with a plan for everything.',
     curiosity: 'Architects are the most likely personality type to say it was easy for them to do well in school.',
@@ -11,7 +11,7 @@ const types = [
   {
     name: 'Logican',
     shortcut: 'INTP',
-    percentage: '3%',
+    percentage: 3,
     features: 'Intoverted Intuitive Thinking Prospecting',
     summary: 'Innovative inventors with an unquenchable thirst for knowledge.',
     curiosity: 'Logicians are the most likely personality type to consider being an astronomer.',
@@ -20,7 +20,7 @@ const types = [
   {
     name: 'Commander',
     shortcut: 'ENTJ',
-    percentage: '3%',
+    percentage: 3,
     features: 'Extraverted Intuitive Thinking Judging',
     summary: 'Bold, imaginative and strong-willed leaders, always finding a way - or making one.',
     curiosity: 'Commanders are the most likely personality type to try to complete tasks long before they are due.',
@@ -29,7 +29,7 @@ const types = [
   {
     name: 'Debater',
     shortcut: 'ENTP',
-    percentage: '3%',
+    percentage: 3,
     features: 'Extraverted Intuitive Thinking Prospecting',
     summary: 'Smart and curious thinkers who cannot resist an intellectual challenge.',
     curiosity: 'Debaters are the most likely personality type to want to be famous.',
@@ -38,7 +38,7 @@ const types = [
   {
     name: 'Advocate',
     shortcut: 'INFJ',
-    percentage: '1.5%',
+    percentage: 1.5,
     features: 'Intoverted Intuitive Feeling Judging',
     summary: 'Quiet and mystical, yet very inspiring and tireless idealists.',
     curiosity: 'Advocates are the most likely personality type to describe themselves as “people watchers”.',
@@ -47,7 +47,7 @@ const types = [
   {
     name: 'Mediator',
     shortcut: 'INFP',
-    percentage: '4.5%',
+    percentage: 4.5,
     features: 'Intoverted Intuitive Feeling Prospecting',
     summary: 'Poetic, kind and altruistic people, always eager to help a good cause.',
     curiosity: 'Mediators are the least likely personality type to say they perform better under stress.',
@@ -56,7 +56,7 @@ const types = [
   {
     name: 'Protagonist',
     shortcut: 'ENFJ',
-    percentage: '2.5%',
+    percentage: 2.5,
     features: 'Extraverted Intuitive Feeling Judging',
     summary: 'Charismatic and inspiring leaders, able to mesmerize their listeners.',
     curiosity: 'Protagonists are the most likely personality type to defend someone who is being bullied.',
@@ -65,7 +65,7 @@ const types = [
   {
     name: 'Campaigner',
     shortcut: 'ENFP',
-    percentage: '7%',
+    percentage: 7,
     features: 'Extraverted Intuitive Feeling Prospecting',
     summary: 'Creative and sociable free spirits, who can always find a reason to smile.',
     curiosity: 'Campaigners are the most likely personality type to say that success is primarily determined by belief in yourself.',
@@ -74,7 +74,7 @@ const types = [
   {
     name: 'Logistician',
     shortcut: 'ISTJ',
-    percentage: '13%',
+    percentage: 13,
     features: 'Intoverted Observant Thinking Judging',
     summary: 'Practical and fact-minded individuals, whose reliability cannot be doubted.',
     curiosity: 'Logisticians are the most likely personality type to say they are private individuals.',
@@ -83,7 +83,7 @@ const types = [
   {
     name: 'Defender',
     shortcut: 'ISFJ',
-    percentage: '12.5%',
+    percentage: 12.5,
     features: 'Intoverted Observant Feeling Judging',
     summary: 'Very dedicated and warm protectors, always ready to defend their loved ones.',
     curiosity: 'Defenders are the least likely personality type to enjoy gambling.',
@@ -92,7 +92,7 @@ const types = [
   {
     name: 'Executive',
     shortcut: 'ESTJ',
-    percentage: '11.5%',
+    percentage: 11.5,
     features: 'Extraverted Observant Thinking Judging',
     summary: 'Excellent administators, unsurpassed at managing things - or people.',
     curiosity: 'Executives are the most likely personality type to know what success means to them personally.',
@@ -101,7 +101,7 @@ const types = [
   {
     name: 'Consul',
     shortcut: 'ESFJ',
-    percentage: '12%',
+    percentage: 12,
     features: 'Extraverted Observant Feeling Judging',
     summary: 'Extraordinarily caring, social and popular people, always eager to help.',
     curiosity: 'Consuls are the most likely personality type to believe most of their actions have a positive impact on other people’s lives.',
@@ -110,7 +110,7 @@ const types = [
   {
     name: 'Virtuoso',
     shortcut: 'ISTP',
-    percentage: '5%',
+    percentage: 5,
     features: 'Intoverted Observant Thinking Prospecting',
     summary: 'Bold and practical experimenters, masters of all kind of tools.',
     curiosity: 'Virtuosos are the most likely personality type to avoid asking other people for help.',
@@ -119,7 +119,7 @@ const types = [
   {
     name: 'Adventurer',
     shortcut: 'ISFP',
-    percentage: '8%',
+    percentage: 8,
     features: 'Intoverted Observant Feeling Prospecting',
     summary: 'Flexible and charming artists, always ready to explore and experience something new.',
     curiosity: 'Adventurers are the personality type most likely to be productive late in the evening.',
@@ -128,7 +128,7 @@ const types = [
   {
     name: 'Entrepreneur',
     shortcut: 'ESTP',
-    percentage: '4%',
+    percentage: 4,
     features: 'Extaverted Observant Thinking Prospecting',
     summary: 'Smart, energetic and very perceptive people, who truly enjoy living on the edge.',
     curiosity: 'Entrepreneurs are the most likely personality type to know how to build and start a fire.',
@@ -137,7 +137,7 @@ const types = [
   {
     name: 'Entertainer',
     shortcut: 'ESFP',
-    percentage: '7.5%',
+    percentage: 7.5,
     features: 'Extaverted Observant Feeling Prospecting',
     summary: 'Spontaneous, energetic and enthusiastic people - life is never boring around them.',
     curiosity: 'Entertainers are the most likely personality type to say they are good at cheering people up.',

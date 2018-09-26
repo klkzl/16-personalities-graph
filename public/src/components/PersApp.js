@@ -53,7 +53,9 @@ class PersApp extends Component {
               {item.name}
             </Position>
           ))}
-          <Graph types={types} />
+          <Graph
+            activePers={this.state.name}
+          />
           <Description
             summary={summary}
             curiosity={curiosity}
