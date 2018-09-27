@@ -35,6 +35,12 @@ const Title = styled.h5`
   text-align: left;
 `;
 
+const Text = styled.text`
+  display: ${props => (props.isActive) ? 'block' : 'none'};
+  font-size: ${props => props.theme.sSize}px;
+  stroke: none;
+`;
+
 // const CircleWrapper = props => {
 //   const isActive = props.className === props.activePers;
 //   return (
@@ -42,4 +48,4 @@ const Title = styled.h5`
 //   )
 // }
 
-export { Container, Ilustration, Circle, Title };
+export { Container, Ilustration, Circle, Title, Text };
