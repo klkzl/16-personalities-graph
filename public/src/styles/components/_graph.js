@@ -19,7 +19,7 @@ const Ilustration = styled.svg`
 const Circle = styled.circle`
   fill: ${props => (props.isActive) ? props.theme.mediumBlue : props.theme.darkGrey };
   opacity: ${props => (props.isActive) ? 1 : .4};
-  transform: ${props => (props.isActive) ? 'scale(1.01)' : 'scale(1)'};
+  transform: ${props => (props.isActive) ? 'scale(1.02)' : 'scale(1)'};
   transition: transform .5s;
 `;
 

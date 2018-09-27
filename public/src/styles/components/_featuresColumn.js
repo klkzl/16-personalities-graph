@@ -15,8 +15,8 @@ const InsideContainer = styled.div`
 
 const Position = styled.div`
   box-sizing: border-box;
-  cursor: pointer;
   color: ${props => (props.className.includes(props.activePers)) ? props.theme.mediumBlue : 'black'};
+  color: ${props => (props.activePers === '') ? 'black' : ''};
   font-weight: 400;
   height: ${props => props.theme.module * 1.6}px;
   padding: ${props => props.theme.module * .5}px;
@@ -35,6 +35,7 @@ const Ilustration = styled.svg`
 
 const Circle = styled.circle`
   fill: ${props => (props.className.includes(props.activePers)) ? props.theme.mediumBlue: props.theme.lightGrey};
+  fill: ${props => (props.activePers === '' ? props.theme.lightGrey : '')};
   stroke: black;
   stroke-width: 1;
 `;
