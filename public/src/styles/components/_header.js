@@ -8,9 +8,10 @@ const Title = styled.h4`
   margin: ${props => props.theme.module * .5}px 0 0;
 `;
 
-const Subtitle = styled.p`
-  cursor: pointer;
+const Subtitle = styled.a`
+  color: black;
   margin: ${props => props.theme.module / 4}px 0 ${props => props.theme.module * .8}px;
+  text-decoration: none;
 
   &:hover {
     color: ${props => props.theme.mediumBlue};

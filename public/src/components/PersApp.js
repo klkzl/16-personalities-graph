@@ -9,7 +9,7 @@ import TypeTitle from './TypeTitle';
 import { Container, Position } from '../styles/components/_persApp';
 
 import types from '../constants/types';
-import { TITLE, SUBTITLE } from '../constants/';
+import { TITLE, SUBTITLE, SOURCE } from '../constants/';
 
 import theme from '../styles/base/Theme';
 import { ThemeProvider } from 'styled-components';
@@ -38,6 +38,7 @@ class PersApp extends Component {
           <Header
             title={TITLE}
             subtitle={SUBTITLE}
+            source={SOURCE}
           />
           <TypeTitle
             title={shortcut}
