@@ -17,13 +17,6 @@ const Ilustration = styled.svg`
   // background-color: ${props => props.theme.lightGrey};
 `;
 
-// const Circle = styled.circle`
-//   fill: ${props => (props.isActive) ? props.theme.mediumBlue : props.theme.darkGrey };
-//   opacity: ${props => (props.isActive) ? 1 : .4};
-//   transform: ${props => (props.isActive) ? 'scale(1.02)' : 'scale(1)'};
-//   transition: transform .5s;
-// `;
-
 const Title = styled.h5`
   color: ${props => props.theme.mediumBlue};
   font-family: ${props => props.theme.mainFont};

@@ -57,7 +57,9 @@ class Graph extends Component {
 
     singleCircle
       .style("fill", d => d.data.name === newActive ? "#56bbcd" : "#bbb8af")
-      .style("opacity", d => d.data.name === newActive ? "1" : ".3");
+      .style("opacity", d => d.data.name === newActive ? "1" : ".3")
+      .style("transform", d => d.data.name === newActive ? "scale(1.02)" : "scale(1)")
+      .style("transition", "transform .3s");
 
     singleText
       .style("display", d => d.data.name === newActive ? "block" : "none");
