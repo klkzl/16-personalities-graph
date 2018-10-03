@@ -22,7 +22,7 @@ class PersApp extends Component {
     features: '',
     summary: '',
     curiosity: '',
-    famous: []
+    famous: ''
   }
 
   hoverEfect = (item) => {
@@ -30,7 +30,7 @@ class PersApp extends Component {
   }
 
   render() {
-    const { shortcut, summary, curiosity } = this.state;
+    const { shortcut, summary, curiosity, famous } = this.state;
 
     return (
       <ThemeProvider theme={theme}>
@@ -58,8 +58,10 @@ class PersApp extends Component {
             activePers={this.state.name}
           />
           <Description
+            activePers={this.state.name}
             summary={summary}
             curiosity={curiosity}
+            famous={famous}
           />
         </Container>
       </ThemeProvider>

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container, Title, Paragraph } from '../styles/components/_container';
 
-const Description = ({ summary, curiosity }) => (
+const Description = ({ activePers, summary, curiosity, famous }) => (
   <Container>
     { summary &&
       <Title>Description:</Title>
@@ -12,6 +12,10 @@ const Description = ({ summary, curiosity }) => (
       && <Title>Curiosity:</Title>
     }
     <Paragraph>{curiosity}</Paragraph>
+    { activePers &&
+      <Title>Famous {activePers}s:</Title>
+    }
+    <Paragraph>{famous}</Paragraph>
   </Container>
 );
 

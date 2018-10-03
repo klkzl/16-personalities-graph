@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   box-sizing: border-box;
   // border: 1px solid ${props => props.theme.darkGrey};
-  height: ${props => props.theme.module * 8.5}px;
+  height: ${props => props.theme.module * 7.5}px;
   position: absolute;
   right: ${props => props.theme.module}px;
   top: ${props => props.theme.module * 2.3}px;
@@ -11,9 +11,8 @@ const Container = styled.div`
 `;
 
 const Ilustration = styled.svg`
-  margin-top: 12px;
   width: 100%;
-  height: 95%;
+  height: 100%;
   // background-color: ${props => props.theme.lightGrey};
 `;
 

@@ -16,7 +16,7 @@ class Graph extends Component {
   }
 
   createBubbleChart() {
-    const diameter = 240;
+    const diameter = 225;
     const svg = d3.select(".bubblechart");
 
     const bubble = d3.pack(drawingCircles)
@@ -58,7 +58,7 @@ class Graph extends Component {
     singleCircle
       .style("fill", d => d.data.name === newActive ? "#56bbcd" : "#bbb8af")
       .style("opacity", d => d.data.name === newActive ? "1" : ".3")
-      .style("transform", d => d.data.name === newActive ? "scale(1.02)" : "scale(1)")
+      .style("transform", d => d.data.name === newActive ? "scale(1.04)" : "scale(1)")
       .style("transition", "transform .3s");
 
     singleText
