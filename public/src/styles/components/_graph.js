@@ -11,17 +11,18 @@ const Container = styled.div`
 `;
 
 const Ilustration = styled.svg`
+  margin-top: 12px;
   width: 100%;
-  height: 100%;
+  height: 95%;
   // background-color: ${props => props.theme.lightGrey};
 `;
 
-const Circle = styled.circle`
-  fill: ${props => (props.isActive) ? props.theme.mediumBlue : props.theme.darkGrey };
-  opacity: ${props => (props.isActive) ? 1 : .4};
-  transform: ${props => (props.isActive) ? 'scale(1.02)' : 'scale(1)'};
-  transition: transform .5s;
-`;
+// const Circle = styled.circle`
+//   fill: ${props => (props.isActive) ? props.theme.mediumBlue : props.theme.darkGrey };
+//   opacity: ${props => (props.isActive) ? 1 : .4};
+//   transform: ${props => (props.isActive) ? 'scale(1.02)' : 'scale(1)'};
+//   transition: transform .5s;
+// `;
 
 const Title = styled.h5`
   color: ${props => props.theme.mediumBlue};
@@ -35,12 +36,6 @@ const Title = styled.h5`
   text-align: left;
 `;
 
-const Text = styled.text`
-  display: ${props => (props.isActive) ? 'block' : 'none'};
-  font-size: ${props => props.theme.sSize}px;
-  stroke: none;
-`;
-
 // const CircleWrapper = props => {
 //   const isActive = props.className === props.activePers;
 //   return (
@@ -48,4 +43,4 @@ const Text = styled.text`
 //   )
 // }
 
-export { Container, Ilustration, Circle, Title, Text };
+export { Container, Ilustration, Title };
