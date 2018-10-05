@@ -9,7 +9,7 @@ const Name = styled.div`
   letter-spacing: ${props => props.theme.module / 10}px;
   padding: ${props => props.theme.sSize}px;
   position: absolute;
-  top: ${props => props.theme.module * 1.2}px;
+  top: ${props => props.theme.module * 2}px;
   width: ${props => props.theme.module * 5}px;
 `;
 

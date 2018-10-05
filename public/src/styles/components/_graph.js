@@ -6,14 +6,13 @@ const Container = styled.div`
   height: ${props => props.theme.module * 7.5}px;
   position: absolute;
   right: ${props => props.theme.module}px;
-  top: ${props => props.theme.module * 2.3}px;
+  top: ${props => props.theme.module * 3.3}px;
   width: ${props => props.theme.module * 8}px;
 `;
 
 const Ilustration = styled.svg`
   width: 100%;
   height: 100%;
-  // background-color: ${props => props.theme.lightGrey};
 `;
 
 const Title = styled.h5`

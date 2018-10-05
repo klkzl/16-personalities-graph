@@ -7,7 +7,7 @@ const Container = styled.div`
   padding: ${props => props.theme.sSize * .5}px;
   position: absolute;
   right: ${props => props.theme.module}px;
-  top: ${props => props.theme.module * 9.7 - 10}px;
+  top: ${props => props.theme.module * 10.7 - 10}px;
   width: ${props => props.theme.module * 8}px;
 `;
 

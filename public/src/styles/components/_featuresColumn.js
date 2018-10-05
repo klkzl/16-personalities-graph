@@ -5,7 +5,7 @@ const Container = styled.div`
   height: ${props => props.theme.module * 12.8}px;
   left: ${props => props.theme.module}px;
   position: absolute;
-  top: ${props => props.theme.module * 2.7}px;
+  top: ${props => props.theme.module * 3.5}px;
   width: ${props => props.theme.module * 9}px;
 `;
 
