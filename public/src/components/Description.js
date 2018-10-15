@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { Container, Title, Paragraph } from '../styles/components/_container';
 
-const Description = ({ activePers, summary, curiosity, famous }) => (
+const Description = ({ activePers, curiosity, famous, summary }) => (
   <Container>
     { summary &&
       <Title>Description:</Title>
@@ -18,5 +19,12 @@ const Description = ({ activePers, summary, curiosity, famous }) => (
     <Paragraph>{famous}</Paragraph>
   </Container>
 );
+
+Description.propTypes = {
+  activePers: PropTypes.string.isRequired,
+  curiosity: PropTypes.string.isRequired,
+  famous: PropTypes.string.isRequired,
+  summary: PropTypes.string.isRequired
+};
 
 export default Description;

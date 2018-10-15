@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 
 import features from '../constants/features';
 import { circlePaths, graphPaths, oppositePaths } from '../constants/drawingPaths';
@@ -86,5 +87,9 @@ const FeaturesColumn = ({ activePers }) => (
     </InsideContainer>
   </Container>
 );
+
+FeaturesColumn.propTypes = {
+  activePers: PropTypes.string.isRequired
+};
 
 export default FeaturesColumn;

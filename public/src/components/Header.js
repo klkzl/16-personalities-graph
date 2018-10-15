@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { Title, Subtitle } from '../styles/components/_header';
 
@@ -15,5 +16,11 @@ const Header = ({ title, subtitle, source }) => (
     </p>
   </div>
 );
+
+Header.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  source: PropTypes.string.isRequired
+};
 
 export default Header;

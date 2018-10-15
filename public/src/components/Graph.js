@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import * as d3 from 'd3';
+import PropTypes from 'prop-types';
 
 import drawingCircles from '../constants/drawingCircles';
 
@@ -78,5 +79,9 @@ class Graph extends Component {
     );
   }
 }
+
+Graph.propTypes = {
+  activePers: PropTypes.string.isRequired
+};
 
 export default Graph;
